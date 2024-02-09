@@ -79,6 +79,17 @@
     font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
     letter-spacing: 2px;
   }*/
+  .emailShown:hover{
+    opacity: 1;
+    color:  #049B79;
+  }
+  .emailShown{
+opacity: 0;
+  }
+  .links:hover{
+    color:#049B79;
+    font-weight: bold;
+  }
   .font {
     /* Existing styles */
     text-align: center;
@@ -106,12 +117,17 @@
     opacity: 0; /* Make SVG fully transparent on hover */
     transform: translateX(-20px); /* Move SVG to the right before disappearing */
   }
-  
+  .heigtt{
+    font-size:35px;
+    font-family: 'TT Tunnels', bold, 'Impact', sans-serif;
+    color:#EEEEF2;
+  }
   
   .font:hover {
     /* Existing hover styles */
     background-position: right bottom;
     animation: text-reveal-rtl 0.5s forwards;
+    cursor: pointer;
   }
 
   
@@ -137,6 +153,25 @@
   .SecondDeviderMobile{
     
   }
+  .navBarDropdown {/* Hidden by default */
+    display: flex;
+    position: absolute;
+    top: 100%; /* Directly below the toggle element */
+    right: 0;
+    background-color: #182549;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+    z-index: 1000;
+    max-height: 0; /* Start with max-height 0 */
+  transition: max-height 0.5s ease-in-out;
+     /* Ensure it appears above other content */
+  }
+  
+  .navBarDropdown.open {
+    display: flex; /* Show dropdown */
+    max-height: fit-content;
+  }
   
   .dot{
     color:#049B79;
@@ -152,12 +187,12 @@
     color: #EEEEF2;
     font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
   }
-  svg path {
+  .svg path {
     transition: all 0.3s ease;
   }
   
   /* Example hover effect to demonstrate transitions */
-  svg:hover path {
+  .svg:hover path {
     stroke-width: 2.5; /* This is just an example to show transition effect */
     
     color:#049B79;
@@ -178,6 +213,9 @@
     margin:15px;
      borderRadius:25px;
      alignSelf:center;
+}
+.hidden{
+   display: none;
 }
   /* Base styles for the grid container */
 .gridContainer {
@@ -306,6 +344,7 @@
         align-self: center;
         border-radius: 0px;
         font-size: 20px;
+        margin: 0px;
         color: #EEEEF2;/* Add some padding at the bottom */
       }
       
@@ -318,6 +357,9 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    .hidden{
+        display: block;
+    }
   
     /* Adjust text size for smaller screens */
   
@@ -328,7 +370,79 @@
     /* Merging kontakt and Devider into one area */
   
     /* Ensure tom, tom2, and tjueFire areas are not displayed on smaller screens */
-     .tom2, .email, .links {
+     .tom2, .email, .links, .emailShown {
+      display: none;
+    }
+    .svgg{
+        width: auto;
+        height: 10px;
+    }
+    .FirstDeviderMobile{
+        margin: 10px;
+    }
+  }
+  .ContactContainer{
+    display: grid;
+    padding: 0;
+    border-radius: 25px;
+    grid-template-rows: 0.7fr 0.1fr  1fr 0.1fr 0.2fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas:
+      'logo kontakt hamburger'
+      'Devider Devider Devider'
+      'tom main tom2'
+      'Devider2 Devider2 Devider2'
+      'email tjueFire links';
+    width: -webkit-fill-available;
+    margin: 0 10px;
+    height: 97vh;
+    background-color: #182549;
+    justify-self: center;
+    align-self: center;
+    font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
+    color:#EEEEF2;
+    font-size: 30px;
+  }
+  @media (max-width: 768px) {
+    .ContactContainer {
+        display: block;
+        position: relative;
+        height: max-content;
+        justify-self: center;
+        align-self: center;
+        border-radius: 0px;
+        font-size: 20px;
+        color: #EEEEF2;/* Add some padding at the bottom */
+        margin: 0px;
+      }
+      .heigtt{
+        height: 80vh;
+        font-size:25px;
+      }
+      
+    .picture{
+        width: auto;
+        height: 30%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hidden{
+        opacity: 1;
+    }
+  
+    /* Adjust text size for smaller screens */
+  
+    /* Merging logo and hamburger into one area */
+    .logo {
+      grid-area: logoHamburger;
+    }
+    /* Merging kontakt and Devider into one area */
+  
+    /* Ensure tom, tom2, and tjueFire areas are not displayed on smaller screens */
+     .tom2, .email, .links, .emailShown {
       display: none;
     }
     .svgg{
