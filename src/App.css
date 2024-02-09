@@ -98,7 +98,7 @@ opacity: 0;
     background-clip: text;
     -webkit-background-clip: text;
     font-family: 'TT Tunnels', bold, 'Impact', sans-serif;
-    font-size: 7.4rem;
+    font-size: 7.3rem;
     letter-spacing: 2px;
     transition: background-position 0.5s ease, font-size 0.5s ease;
     background-size: 200% 100%;
