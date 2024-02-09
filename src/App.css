@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'TT Tunnels';
+    src: url('/font/TTTunnels-Thin.eot');
+    src: local('TT Tunnels Thin'), local('TTTunnels-Thin'),
+        url('/font/TTTunnels-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/font/TTTunnels-Thin.woff2') format('woff2'),
+        url('/font/TTTunnels-Thin.woff') format('woff'),
+        url('/font/TTTunnels-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Tunnels';
+    src: url('/font/TTTunnels-Bold.eot');
+    src: local('TT Tunnels Bold'), local('TTTunnels-Bold'),
+        url('/font/TTTunnels-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/font/TTTunnels-Bold.woff2') format('woff2'),
+        url('/font/TTTunnels-Bold.woff') format('woff'),
+        url('/font/TTTunnels-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Tunnels';
+    src: url('/font/TTTunnels-Light.eot');
+    src: local('TT Tunnels Light'), local('TTTunnels-Light'),
+        url('/font/TTTunnels-Light.eot?#iefix') format('embedded-opentype'),
+        url('/font/TTTunnels-Light.woff2') format('woff2'),
+        url('/font/TTTunnels-Light.woff') format('woff'),
+        url('/font/TTTunnels-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Tunnels';
+    src: url('/font/TTTunnels-Regular.eot');
+    src: local('TT Tunnels Regular'), local('TTTunnels-Regular'),
+        url('/font/TTTunnels-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/font/TTTunnels-Regular.woff2') format('woff2'),
+        url('/font/TTTunnels-Regular.woff') format('woff'),
+        url('/font/TTTunnels-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Tunnels';
+    src: url('/font/TTTunnels-Black.eot');
+    src: local('TT Tunnels Black'), local('TTTunnels-Black'),
+        url('/font/TTTunnels-Black.eot?#iefix') format('embedded-opentype'),
+        url('/font/TTTunnels-Black.woff2') format('woff2'),
+        url('/font/TTTunnels-Black.woff') format('woff'),
+        url('/font/TTTunnels-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  
+  /*.font {
+    text-align: center;
+    color: #EEEEF2;
+    font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
+    font-size: 7.333vw;
+    letter-spacing: 2px;
+    transition: color 0.5s ease, font-size 0.5s ease; 
+  }
+
+  .font:hover {
+    text-align: center;
+    color: #049B79;
+    font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
+    letter-spacing: 2px;
+  }*/
+  .font {
+    /* Existing styles */
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to right, #EEEEF2 50%, #049B79 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'TT Tunnels', bold, 'Impact', sans-serif;
+    font-size: 7.4rem;
+    letter-spacing: 2px;
+    transition: background-position 0.5s ease, font-size 0.5s ease;
+    background-size: 200% 100%;
+    background-position: left bottom;
+    /* New style for SVG opacity transition */
+    transition: background-position 0.5s ease, font-size 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .font svg {
+    transition: opacity 0.2s ease, transform 0.2s ease; /* Apply transition to both opacity and transform */
+    opacity: 1; /* Ensure SVG is fully visible by default */
+    transform: translateX(0); /* Start with no horizontal movement */
+  }
+  
+  .font:hover svg {
+    opacity: 0; /* Make SVG fully transparent on hover */
+    transform: translateX(-20px); /* Move SVG to the right before disappearing */
+  }
+  
+  
+  .font:hover {
+    /* Existing hover styles */
+    background-position: right bottom;
+    animation: text-reveal-rtl 0.5s forwards;
+  }
+
+  
+  @keyframes text-reveal-rtl {
+    from {
+      background-position: 0% center;
+      
+    }
+    to{
+        background-position: 25% center;
+    }
+    to{
+        background-position: 50% center;
+    }
+    to{
+        background-position: 75% center;
+    }
+    to {
+      background-position: 100% center;
+      
+    }
+  }
+  .SecondDeviderMobile{
+    
+  }
+  
+  .dot{
+    color:#049B79;
+    font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
+     font-size:7.333vw;
+     transition: color 0.5s ease, font-size 0.5s ease; 
+  }
+  .dot:hover{
+    color:#EEEEF2;
+    font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
+  }
+  .fontSmall{
+    color: #EEEEF2;
+    font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
+  }
+  svg path {
+    transition: all 0.3s ease;
+  }
+  
+  /* Example hover effect to demonstrate transitions */
+  svg:hover path {
+    stroke-width: 2.5; /* This is just an example to show transition effect */
+    
+    color:#049B79;
+  }
+  .svgg{
+    width:auto;
+     height:2rem;
+  }
+  .email{
+    fontSize:40px;
+    margin-left:2rem;
+    margin-bottom:2rem;
+  }
+  .FirstDeviderMobile{
+    margin-right: 10px;
+}
+.picture{
+    margin:15px;
+     borderRadius:25px;
+     alignSelf:center;
+}
+  /* Base styles for the grid container */
+.gridContainer {
+    display: grid;
+    padding: 0;
+    margin: 0 10px;
+    border-radius: 25px;
+    grid-template-rows: 0.7fr 0.1fr 1fr 1fr 0.1fr 0.2fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas:
+      'logo kontakt hamburger'
+      'Devider Devider Devider'
+      'navn main prosjekter'
+      'tom omMeg tom2'
+      'Devider2 Devider2 Devider2'
+      'email tjueFire links';
+    width: -webkit-fill-available;
+    height: 97vh;
+    background-color: #182549;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  /* Responsive adjustments */
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .gridContainer {
+        display: block;
+        position: relative;
+        height: 100vh;
+        justify-self: center;
+        align-self: center;
+        margin: 0px;
+        border-radius: 0px;
+     /* grid-template-rows: 1fr; /* All items in a single column 
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        'logoHamburger'
+        'kontakt'
+        'Devider'
+        'navn'
+        'main'
+        'prosjekter'
+        'omMeg'
+        'Devider2'
+        'email'
+        'links';*/
+      /* Adjust padding, margins, or other styles as needed */
+    }
+    
+  
+    /* Adjust text size for smaller screens */
+    .font, .fontSmall {
+      font-size: 16px; /* Smaller text size */
+    }
+  
+    /* Merging logo and hamburger into one area */
+    .logo {
+      grid-area: logoHamburger;
+    }
+      .email {
+        position: absolute; /* Position .email and .links absolutely within .gridContainer */
+        width: 100%; /* Stretch across the full width of the container */
+        left: 0; 
+        bottom: 40px; /* Position .email a bit above .links */
+        margin: 10px;
+      }
+    
+      .links {
+        position: absolute; /* Position .email and .links absolutely within .gridContainer */
+        width: 100%; /* Stretch across the full width of the container */
+        margin: 10px;
+        left: 0; 
+        bottom: 10px; /* Position .links at the very bottom */
+      }
+    /* Merging kontakt and Devider into one area */
+  
+    /* Ensure tom, tom2, and tjueFire areas are not displayed on smaller screens */
+    .tom, .tom2, .tjueFire, .hamburger {
+      display: none;
+    }
+    .svgg{
+        width: auto;
+        height: 10px;
+    }
+    .FirstDeviderMobile{
+        margin: 10px;
+    }
+    .SecondDeviderMobile{
+       margin-left: 50px;
+    }
+  }
+  .nav{
+
+  }
+  .AboutContainer{
+    display: grid;
+    padding: 0;
+    margin: 0 10px;
+    border-radius: 25px;
+    grid-template-rows: 0.7fr 0.1fr  1fr 0.1fr 0.2fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas:
+      'logo kontakt hamburger'
+      'Devider Devider Devider'
+      'picture omMeg tom2'
+      'Devider2 Devider2 Devider2'
+      'email tjueFire links';
+    width: -webkit-fill-available;
+    height: 97vh;
+    background-color: #182549;
+    justify-self: center;
+    align-self: center;
+    font-family: 'TT Tunnels',bold, 'Impact', sans-serif;
+    color:#EEEEF2;
+    font-size: 30px;
+
+  }
+  @media (max-width: 768px) {
+    .AboutContainer {
+        display: block;
+        position: relative;
+        height: fit-content;
+        justify-self: center;
+        align-self: center;
+        border-radius: 0px;
+        font-size: 20px;
+        color: #EEEEF2;/* Add some padding at the bottom */
+      }
+      
+    .picture{
+        width: auto;
+        height: 30%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    /* Adjust text size for smaller screens */
+  
+    /* Merging logo and hamburger into one area */
+    .logo {
+      grid-area: logoHamburger;
+    }
+    /* Merging kontakt and Devider into one area */
+  
+    /* Ensure tom, tom2, and tjueFire areas are not displayed on smaller screens */
+     .tom2, .email, .links {
+      display: none;
+    }
+    .svgg{
+        width: auto;
+        height: 10px;
+    }
+    .FirstDeviderMobile{
+        margin: 10px;
+    }
+  }
+ 
+  
+  
