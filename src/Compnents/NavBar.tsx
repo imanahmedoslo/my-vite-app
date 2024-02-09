@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import SideBar from './SideBar';
+import  { useState } from 'react';
+
 import "../App.css"
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 type navBarProps={
     gridArea:string,
     className:string,

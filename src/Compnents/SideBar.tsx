@@ -1,7 +1,6 @@
-import { Navigate, useNavigate } from "react-router-dom"
+
 import "../App.css"
 export default function SideBar(){
-    const Navigate= useNavigate();
     return (<div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
     <p style={{fontSize:"25px"}} className="fontSmall">KontaktInfo<b style={{color:'#049B79'}}>.</b></p>
     <p style={{fontSize:"25px"}} className="fontSmall">Dashboard<b style={{color:'#049B79'}}>.</b></p>
