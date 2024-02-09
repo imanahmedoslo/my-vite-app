@@ -1,6 +1,5 @@
 import "./App.css";
 import HomePage from "./Compnents/homePage";
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AboutMe from "./Compnents/AboutMe";
 import ErrorPage from "./Compnents/Error";

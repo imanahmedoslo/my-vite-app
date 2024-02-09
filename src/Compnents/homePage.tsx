@@ -1,9 +1,7 @@
-import SideBar from "./SideBar"
-import ImanPng from "./assets/iman.png"
 import AwLogo from "../assets/AwLogo.png";
 import Devider from "./Devider"
 import NavBar from "./NavBar"
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function HomePage() {
