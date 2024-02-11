@@ -1,9 +1,9 @@
 import "./App.css";
-import HomePage from "./Compnents/homePage";
+import HomePage from "./Components/homePage";
 import { Routes, Route } from 'react-router-dom';
-import AboutMe from "./Compnents/AboutMe";
-import ErrorPage from "./Compnents/Error";
-import Contacts from "./Compnents/Contacts";
+import AboutMe from "./Components/AboutMe";
+import ErrorPage from "./Components/Error";
+import Contacts from "./Components/Contacts";
 //import AboutPage from './components/AboutPage';
 //import NotFoundPage from './components/NotFoundPage';
 

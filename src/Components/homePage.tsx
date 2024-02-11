@@ -1,4 +1,4 @@
-import AwLogo from "../assets/AwLogo.png";
+import AwLogo from "../assets/awLogo.png";
 import Devider from "./Devider"
 import NavBar from "./NavBar"
 import { useNavigate } from "react-router-dom";
