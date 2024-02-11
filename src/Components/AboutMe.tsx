@@ -42,7 +42,7 @@ export default function AboutMe(){
 
   <div className="fontSmall email" style={{ gridArea:"email", borderBottom:"white 2px solid", width:"auto", alignSelf:"baseline" }}>Email: <a className="emailShown" href="mailto:imanahmedimanahmed@gmail.com">imanahmedimanahmed@gmail.com</a></div>
   <div className="fontSmall tjueFire" style={{ gridArea:"tjueFire",alignSelf:"center", justifySelf:"center",}}> February  The  8<span style={{ fontSize: 'smaller', verticalAlign: 'top' }}>th. </span>  2024</div>
-  <div onClick={handleLinkedInd} className="fontSmall links" style={{ gridArea:"links",alignSelf:"center", justifySelf:"center" }}>LinkdIn</div>
+  <div onClick={handleLinkedInd} className="fontSmall links" style={{ gridArea:"links",alignSelf:"center", justifySelf:"center" }}>LinkedIn</div>
    
       </div>
       </div>

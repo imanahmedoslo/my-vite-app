@@ -31,7 +31,7 @@ export default function Contacts(){
           <Devider className="FirstDeviderMobile" justifySelf="center" gridArea="Devider2" height={"auto"} width={"90vw"}/>
             <div className=" email" style={{gridArea:"email", borderBottom:"white 2px solid ", width:"auto", alignSelf:"baseline"}}>Email:  <a className="emailShown" href="mailto:imanahmedimanahmed@gmail.com">imanahmedimanahmed@gmail.com</a></div>
             <div className=" tjueFire" style={{gridArea:"tjueFire", alignSelf:"center", justifySelf:"center",}}>  February  The  8<span style={{ fontSize: 'smaller', verticalAlign: 'top' }}>th. </span>  2024</div>
-            <div onClick={handleLinkedInd} className=" links" style={{gridArea:"links",alignSelf:"center",justifySelf:"center",}}>LinkdIn</div>   
+            <div onClick={handleLinkedInd} className=" links" style={{gridArea:"links",alignSelf:"center",justifySelf:"center",}}>LinkedIn</div>   
       </div>
       </div>)
 }

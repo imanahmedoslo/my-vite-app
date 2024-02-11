@@ -56,7 +56,7 @@ fill="#049B79"></path>
         <Devider className="SecondDeviderMobile" justifySelf="end" gridArea="Devider2" height={"auto"} width={"60vw"}/>
           <div  className="fontSmall email" style={{fontSize:"25px",gridArea:"email", borderBottom:"white 2px solid ", width:"auto", alignSelf:"baseline"}}>Email: <a className="emailShown" href="mailto:imanahmedimanahmed@gmail.com">imanahmedimanahmed@gmail.com</a></div>
           <div className="fontSmall tjueFire" style={{fontSize:"25px",gridArea:"tjueFire", alignSelf:"center", justifySelf:"center",}}>  February  The  8<span style={{ fontSize: 'smaller', verticalAlign: 'top' }}>th. </span>  2024</div>
-          <div onClick={handleLinkedInd} className="fontSmall links" style={{fontSize:"25px",gridArea:"links",alignSelf:"center",justifySelf:"center",}}> LinkdIn</div>   
+          <div onClick={handleLinkedInd} className="fontSmall links" style={{fontSize:"25px",gridArea:"links",alignSelf:"center",justifySelf:"center",}}> LinkedIn</div>   
     </div>
     </div>
     
