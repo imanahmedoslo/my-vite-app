@@ -11,13 +11,7 @@ export default function AboutMe(){
     const handleLinkedInd=()=>{
         window.open('https://linkedin.com/in/iman-d-ahmed-23b393250', '_blank', 'noopener,noreferrer');
       }
-    return (<div style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        minHeight: "100vh",
-        minWidth:"100vw",
-      }}>
+    return (
         <div className="AboutContainer">
        <div className="nav" style={{gridArea:"logo"}}><img onClick={handleAWClick} className="logo" style={{height:"3rem", width:"auto", justifySelf:"start", margin:"30px" }} src={AwLogo}/> <NavBar className="hidden" gridArea=""/></div> 
         <div className="font kontakt" style={{height:"fit-content",alignContent:"start", justifySelf:"start", alignSelf:"start", gridArea:"kontakt",textAlign:"start"}}><h2 className="font" style={{margin:"0"}}>LITT OM MEG<svg width={'auto'} className="svgg" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +39,7 @@ export default function AboutMe(){
   <div onClick={handleLinkedInd} className="fontSmall links" style={{ gridArea:"links",alignSelf:"center", justifySelf:"center" }}>LinkedIn</div>
    
       </div>
-      </div>
+     
       
     )
   }

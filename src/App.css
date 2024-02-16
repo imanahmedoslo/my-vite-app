@@ -98,7 +98,7 @@ opacity: 0;
     background-clip: text;
     -webkit-background-clip: text;
     font-family: 'TT Tunnels', bold, 'Impact', sans-serif;
-    font-size: 7.3rem;
+     font-size: clamp( 5rem,7.3rem, 7.3rem);
     letter-spacing: 2px;
     transition: background-position 0.5s ease, font-size 0.5s ease;
     background-size: 200% 100%;
@@ -172,6 +172,9 @@ opacity: 0;
     display: flex; /* Show dropdown */
     max-height: fit-content;
   }
+  .navBarDropdown:hover{
+    cursor: pointer;
+  }
   
   .dot{
     color:#049B79;
@@ -234,10 +237,50 @@ opacity: 0;
       'Devider2 Devider2 Devider2'
       'email tjueFire links';
     width: -webkit-fill-available;
+    min-width:  -webkit-fill-available;
     height: 97vh;
     background-color: #182549;
     justify-self: center;
     align-self: center;
+  }
+  @media (max-width: 1650px){
+    .font{
+      text-align: center;
+    color: transparent;
+    background: linear-gradient(to right, #EEEEF2 50%, #049B79 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'TT Tunnels', bold, 'Impact', sans-serif;
+     font-size: 5rem;
+    letter-spacing: 2px;
+    transition: background-position 0.5s ease, font-size 0.5s ease;
+    background-size: 200% 100%;
+    background-position: left bottom;
+    /* New style for SVG opacity transition */
+    transition: background-position 0.5s ease, font-size 0.5s ease, opacity 0.5s ease;
+    }
+    .svgg{
+      width:auto;
+       height:1rem;
+    }
+  }
+  @media (max-width: 1380px){
+    .font{
+      text-align: center;
+    color: transparent;
+    background: linear-gradient(to right, #EEEEF2 50%, #049B79 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'TT Tunnels', bold, 'Impact', sans-serif;
+     font-size: 4rem;
+    letter-spacing: 2px;
+    transition: background-position 0.5s ease, font-size 0.5s ease;
+    background-size: 200% 100%;
+    background-position: left bottom;
+    /* New style for SVG opacity transition */
+    transition: background-position 0.5s ease, font-size 0.5s ease, opacity 0.5s ease;
+      
+    }
   }
   
   /* Responsive adjustments */
@@ -314,6 +357,7 @@ opacity: 0;
 
   }
   .AboutContainer{
+     overflow: auto;
     display: grid;
     padding: 0;
     margin: 0 10px;

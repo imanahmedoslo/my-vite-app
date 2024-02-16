@@ -24,8 +24,10 @@ function HomePage() {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      minHeight: "100vh",
-      minWidth:"100vw" // Take up at least the full viewport height
+      height: "fit-content",
+      overflow:"hidden",
+      minWidth:"100vw", // Take up at least the full viewport height
+      overflowY:"auto"
     }}>
       <div className="gridContainer">
       <div className="nav" style={{gridArea:"logo"}}><img onClick={handleAWClick} className="logo" style={{height:"3rem", width:"auto", justifySelf:"start", margin:"30px" }} src={AwLogo}/> <NavBar className="hidden" gridArea=""/></div> 
@@ -42,7 +44,7 @@ fill="#049B79"></path>
 fill="#049B79"></path>
 </svg></h1></div>
       <div className="fontSmall" style={{gridArea:"main", display:"flex", flexDirection:"column", fontSize:"25px", alignItems:"center", justifyContent:"center"}}><p>Fullstack utvikler<br></br> 25 år gammel<br></br> For tiden ansatt som IT konsulent <br></br> Hos Academic Work</p></div>
-          <div onClick={handleProjectNavigate}className="font" style={{gridArea:"prosjekter"}}><h1 className={`font`}>PROSJEKTER<svg width={'auto'} className="svgg" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div onClick={handleProjectNavigate}className="" style={{gridArea:"prosjekter"}}><h1 className={`font`}>PROSJEKTER<svg width={'auto'} className="svgg" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fillRule="evenodd" clipRule="evenodd" d="M10 8.12543L5 11L-2.25534e-07 8.12543L2.3356e-07 2.87401L5 2.18537e-07L10 2.87401L10 8.12543Z" 
 fill="#049B79"></path>
 </svg></h1> 
