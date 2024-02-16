@@ -219,6 +219,7 @@ opacity: 0;
 }
   /* Base styles for the grid container */
 .gridContainer {
+  overflow: auto;
     display: grid;
     padding: 0;
     margin: 0 10px;
