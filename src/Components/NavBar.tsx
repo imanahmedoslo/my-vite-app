@@ -20,10 +20,11 @@ export default function NavBar({gridArea, className}:navBarProps){
     }
    const [isOpen, setIsOpen] = useState(false);
 
-  const toggleHamburger = () => setIsOpen(!isOpen);
+  const toggleHamburger = () => {setIsOpen(!isOpen)
+  console.log("triggered")};
 
   return (
-    <div className={className } style={{ gridArea: gridArea, justifySelf: "end", margin: "30px",position: "relative"  }} onClick={toggleHamburger}>
+    <div className={className }tabIndex={0} style={{ gridArea: gridArea, justifySelf: "end", margin: "30px",position: "relative"  }} onClick={toggleHamburger} onBlur={toggleHamburger}>
       {isOpen ? (
         <>
         <div className={`navBarDropdown ${isOpen?'open':''}`} style={{  border:"#182549 2px solid",position: 'absolute', top: '30%', right: 0, backgroundColor: '#049B79', padding: '10px', borderRadius: '20px', display: 'flex', flexDirection: 'column', color:'#182549',zIndex: 1000 }}>
