@@ -30,7 +30,7 @@ export default function NavBar({gridArea, className}:navBarProps){
         <div className={`navBarDropdown ${isOpen?'open':''}`} style={{  border:"#182549 2px solid",position: 'absolute', top: '30%', right: 0, backgroundColor: '#049B79', padding: '10px', borderRadius: '20px', display: 'flex', flexDirection: 'column', color:'#182549',zIndex: 1000 }}>
                         <p onClick={()=>handleclick("/Contacts")} className="fontSmall" style={{ fontSize: "30px", color:'#182549' }}>KontaktInfo<b style={{ color: '#049B79' }}>.</b></p>
                         <p onClick={()=>handleclick("/")} className="fontSmall" style={{ fontSize: "30px",color:'#182549' }}>Dashboard<b style={{ color: '#049B79' }}>.</b></p>
-                        <p onClick={()=>handleclick("/about")} className="fontSmall" style={{ fontSize: "30px",color:'#182549' }}>Omg meg<b style={{ color: '#049B79' }}>.</b></p>
+                        <p onClick={()=>handleclick("/about")} className="fontSmall" style={{ fontSize: "30px",color:'#182549' }}>Om meg<b style={{ color: '#049B79' }}>.</b></p>
                         <p onClick={handleProjectNavigate}className="fontSmall" style={{ fontSize: "30px",color:'#182549' }}>Prosjekter<b style={{ color: '#049B79' }}>.</b></p>
                         <p onClick={handleLinkedInd}className="fontSmall" style={{ fontSize: "30px",color:'#182549' }}>LinkedIn<b style={{ color: '#049B79' }}>.</b></p>
                     </div>
